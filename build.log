@@ -1,0 +1,188 @@
+       Debug [tauri_cli::helpers::app_paths] Found Tauri project inside /home/zend/develop/kioskit/kiKit/src-tauri on early lookup
+        Info [tauri_cli::mobile::android] Using installed NDK: /home/zend/Android/Sdk/ndk/26.1.10909125
+        Info [tauri_cli::build] Looking up installed tauri packages to check mismatched versions...
+     Running [tauri_cli::helpers] beforeBuildCommand `npm run build`
+       Debug [tauri_cli::helpers] Setting environment for hook {"TAURI_ENV_PLATFORM_VERSION": "24.4.0", "TAURI_ENV_TARGET_TRIPLE": "aarch64-linux-android", "TAURI_ENV_FAMILY": "unix", "TAURI_ENV_ARCH": "aarch64", "TAURI_ENV_PLATFORM": "android"}
+     Running [tauri_cli] Command `sh -c npm run build`
+
+> kikit@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.6s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/4) ...
+  Generating static pages using 11 workers (1/4) 
+  Generating static pages using 11 workers (2/4) 
+  Generating static pages using 11 workers (3/4) 
+✓ Generating static pages using 11 workers (4/4) in 449.2ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+
+○  (Static)  prerendered as static content
+
+[1m[92m   Compiling[0m app v0.1.0 (/home/zend/develop/kioskit/kiKit/src-tauri)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 16.53s
+        Info [cargo_mobile2::android::jnilibs] symlinking lib "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" in jniLibs dir "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/arm64-v8a"
+        Info [cargo_mobile2::android::ndk] "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "liblog.so"
+        Info [cargo_mobile2::android::ndk] "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libandroid.so"
+        Info [cargo_mobile2::android::ndk] "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libdl.so"
+        Info [cargo_mobile2::android::ndk] "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libm.so"
+        Info [cargo_mobile2::android::ndk] "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libc.so"
+        Info [cargo_mobile2::android::jnilibs] symlink at "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/arm64-v8a/libapp_lib.so" points to "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so"
+Initialized native services in: /home/zend/.gradle/native
+Initialized jansi services in: /home/zend/.gradle/native
+The client will now receive all logging from the daemon (pid: 61612). The daemon log file: /home/zend/.gradle/daemon/8.14.3/daemon-61612.out.log
+Starting 4th build in daemon [uptime: 5 mins 23.393 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 12 worker leases.
+Now considering [/home/zend/develop/kioskit/kiKit/src-tauri/gen/android, /home/zend/develop/kioskit/kiKit/src-tauri/gen/android/buildSrc] as hierarchies to watch
+Now considering [/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/buildSrc, /home/zend/develop/kioskit/kiKit/src-tauri/gen/android] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/settings.gradle'.
+Projects loaded. Root project using build file '/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/build.gradle.kts'.
+Included projects: [root project 'android', project ':app', project ':tauri-android']
+
+> Configure project :buildSrc
+Evaluating project ':buildSrc' using build file '/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/buildSrc/build.gradle.kts'.
+Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '5.2.0']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+file or directory '/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/buildSrc/src/main/kotlin', not found
+Resolve mutations for :buildSrc:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+:buildSrc:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+
+> Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':buildSrc:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :buildSrc:compileKotlin (Thread[Execution worker,5,main]) started.
+:buildSrc:compileKotlin (Thread[Execution worker,5,main]) started.
+
+> Task :buildSrc:compileKotlin UP-TO-DATE
+Caching disabled for task ':buildSrc:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':buildSrc:compileKotlin' as it is up-to-date.
+Resolve mutations for :buildSrc:compileJava (Thread[Execution worker,5,main]) started.
+:buildSrc:compileJava (Thread[Execution worker,5,main]) started.
+
+> Task :buildSrc:compileJava NO-SOURCE
+Skipping task ':buildSrc:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :buildSrc:compileGroovy (Thread[Execution worker,5,main]) started.
+:buildSrc:compileGroovy (Thread[Execution worker,5,main]) started.
+
+> Task :buildSrc:compileGroovy NO-SOURCE
+Skipping task ':buildSrc:compileGroovy' as it has no source files and no previous output files.
+Resolve mutations for :buildSrc:pluginDescriptors (Thread[Execution worker,5,main]) started.
+:buildSrc:pluginDescriptors (Thread[Execution worker,5,main]) started.
+
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':buildSrc:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':buildSrc:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :buildSrc:processResources (Thread[Execution worker,5,main]) started.
+:buildSrc:processResources (Thread[Execution worker,5,main]) started.
+
+> Task :buildSrc:processResources UP-TO-DATE
+Caching disabled for task ':buildSrc:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':buildSrc:processResources' as it is up-to-date.
+Resolve mutations for :buildSrc:classes (Thread[Execution worker,5,main]) started.
+:buildSrc:classes (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :buildSrc:classes UP-TO-DATE
+Skipping task ':buildSrc:classes' as it has no actions.
+Resolve mutations for :buildSrc:jar (Thread[Execution worker Thread 2,5,main]) started.
+:buildSrc:jar (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :buildSrc:jar UP-TO-DATE
+Caching disabled for task ':buildSrc:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':buildSrc:jar' as it is up-to-date.
+
+> Configure project :
+Evaluating root project 'android' using build file '/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/build.gradle.kts'.
+
+> Configure project :app
+Evaluating project ':app' using build file '/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/build.gradle.kts'.
+Resolved plugin [id: 'com.android.application']
+Resolved plugin [id: 'org.jetbrains.kotlin.android']
+Resolved plugin [id: 'rust']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle82 variant
+
+> Configure project :tauri-android
+Evaluating project ':tauri-android' using build file '/home/zend/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.10.2/mobile/android/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library']
+Resolved plugin [id: 'org.jetbrains.kotlin.android']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle82 variant
+All projects evaluated.
+Task name matched 'assembleUniversalRelease'
+Selected primary task 'assembleUniversalRelease' from project :
+Tasks to be executed: [task ':app:preBuild', task ':app:preUniversalReleaseBuild', task ':app:rustBuildArm64Release', task ':app:rustBuildArmRelease', task ':app:rustBuildX86Release', task ':app:rustBuildX86_64Release', task ':app:rustBuildUniversalRelease', task ':app:mergeUniversalReleaseJniLibFolders', task ':tauri-android:preBuild', task ':tauri-android:preReleaseBuild', task ':tauri-android:mergeReleaseJniLibFolders', task ':tauri-android:mergeReleaseNativeLibs', task ':tauri-android:copyReleaseJniLibsProjectOnly', task ':app:mergeUniversalReleaseNativeLibs', task ':app:stripUniversalReleaseDebugSymbols', task ':app:extractUniversalReleaseNativeSymbolTables', task ':app:mergeUniversalReleaseNativeDebugMetadata', task ':tauri-android:checkKotlinGradlePluginConfigurationErrors', task ':tauri-android:generateReleaseBuildConfig', task ':tauri-android:generateReleaseResValues', task ':tauri-android:generateReleaseResources', task ':tauri-android:packageReleaseResources', task ':tauri-android:parseReleaseLocalResources', task ':tauri-android:generateReleaseRFile', task ':tauri-android:compileReleaseKotlin', task ':tauri-android:javaPreCompileRelease', task ':tauri-android:compileReleaseJavaWithJavac', task ':tauri-android:mergeReleaseGeneratedProguardFiles', task ':tauri-android:exportReleaseConsumerProguardFiles', task ':app:buildKotlinToolingMetadata', task ':app:checkUniversalReleaseDuplicateClasses', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:generateUniversalReleaseBuildConfig', task ':tauri-android:writeReleaseAarMetadata', task ':app:checkUniversalReleaseAarMetadata', task ':app:generateUniversalReleaseResValues', task ':app:mapUniversalReleaseSourceSetPaths', task ':app:generateUniversalReleaseResources', task ':app:mergeUniversalReleaseResources', task ':app:packageUniversalReleaseResources', task ':app:parseUniversalReleaseLocalResources', task ':app:createUniversalReleaseCompatibleScreenManifests', task ':app:extractDeepLinksUniversalRelease', task ':tauri-android:extractDeepLinksRelease', task ':tauri-android:processReleaseManifest', task ':app:processUniversalReleaseMainManifest', task ':app:processUniversalReleaseManifest', task ':app:processUniversalReleaseManifestForPackage', task ':tauri-android:compileReleaseLibraryResources', task ':app:processUniversalReleaseResources', task ':tauri-android:bundleLibCompileToJarRelease', task ':app:compileUniversalReleaseKotlin', task ':app:javaPreCompileUniversalRelease', task ':app:compileUniversalReleaseJavaWithJavac', task ':tauri-android:prepareReleaseArtProfile', task ':app:mergeUniversalReleaseArtProfile', task ':tauri-android:bundleLibRuntimeToJarRelease', task ':app:expandUniversalReleaseArtProfileWildcards', task ':app:extractProguardFiles', task ':app:mergeUniversalReleaseGeneratedProguardFiles', task ':app:processUniversalReleaseJavaRes', task ':tauri-android:processReleaseJavaRes', task ':app:mergeUniversalReleaseJavaResource', task ':app:mergeUniversalReleaseStartupProfile', task ':app:minifyUniversalReleaseWithR8', task ':app:compileUniversalReleaseArtProfile', task ':app:mergeUniversalReleaseShaders', task ':app:compileUniversalReleaseShaders', task ':app:generateUniversalReleaseAssets', task ':tauri-android:mergeReleaseShaders', task ':tauri-android:compileReleaseShaders', task ':tauri-android:generateReleaseAssets', task ':tauri-android:mergeReleaseAssets', task ':app:mergeUniversalReleaseAssets', task ':app:compressUniversalReleaseAssets', task ':app:extractUniversalReleaseVersionControlInfo', task ':tauri-android:createFullJarRelease', task ':tauri-android:extractProguardFiles', task ':tauri-android:generateReleaseLintModel', task ':tauri-android:prepareLintJarForPublish', task ':app:generateUniversalReleaseLintVitalReportModel', task ':tauri-android:stripReleaseDebugSymbols', task ':tauri-android:copyReleaseJniLibsProjectAndLocalJars', task ':tauri-android:extractDeepLinksForAarRelease', task ':tauri-android:extractReleaseAnnotations', task ':tauri-android:mergeReleaseConsumerProguardFiles', task ':tauri-android:mergeReleaseJavaResource', task ':tauri-android:syncReleaseLibJars', task ':tauri-android:bundleReleaseLocalLintAar', task ':tauri-android:lintVitalAnalyzeRelease', task ':tauri-android:writeReleaseLintModelMetadata', task ':app:lintVitalAnalyzeUniversalRelease', task ':tauri-android:generateReleaseLintVitalModel', task ':app:lintVitalReportUniversalRelease', task ':app:lintVitalUniversalRelease', task ':app:optimizeUniversalReleaseResources', task ':app:collectUniversalReleaseDependencies', task ':app:sdkUniversalReleaseDependencyData', task ':app:writeUniversalReleaseAppMetadata', task ':app:writeUniversalReleaseSigningConfigVersions', task ':app:packageUniversalRelease', task ':app:createUniversalReleaseApkListingFileRedirect', task ':app:assembleUniversalRelease']
+Tasks that were excluded: []
+work action Parameters of FilterShrinkerRulesTransform (Thread[included builds,5,main]) started.
+work action Parameters of ExtractAarTransform (Thread[Execution worker Thread 11,5,main]) started.
+Resolve mutations for :app:preBuild (Thread[Execution worker Thread 11,5,main]) started.
+:app:preBuild (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preUniversalReleaseBuild (Thread[included builds,5,main]) started.
+:app:preUniversalReleaseBuild (Thread[included builds,5,main]) started.
+
+> Task :app:preUniversalReleaseBuild UP-TO-DATE
+Skipping task ':app:preUniversalReleaseBuild' as it has no actions.
+Resolve mutations for :app:rustBuildArm64Release (Thread[included builds,5,main]) started.
+:app:rustBuildArm64Release (Thread[included builds,5,main]) started.
+
+> Task :app:rustBuildArm64Release FAILED
+Caching disabled for task ':app:rustBuildArm64Release' because:
+  Build cache is disabled
+Task ':app:rustBuildArm64Release' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Starting process 'command 'npm''. Working directory: /home/zend/develop/kioskit/kiKit/src-tauri Command: npm run -- tauri android android-studio-script -v --release --target aarch64
+Successfully started process 'command 'npm''
+npm error Missing script: "tauri"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /home/zend/.npm/_logs/2026-02-05T09_34_10_921Z-debug-0.log
+Could not execute [report metric STATISTICS_COLLECT_METRICS_OVERHEAD]
+Could not execute [report metric STATISTICS_COLLECT_METRICS_OVERHEAD]
+
+[Incubating] Problems report is available at: file:///home/zend/develop/kioskit/kiKit/src-tauri/gen/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:rustBuildArm64Release'.
+> Process 'command 'npm'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2s
+5 actionable tasks: 1 executed, 4 up-to-date
+failed to build APK: Failed to assemble APK with Io(BeforeSpawn(<closure>), Io(StderrFile(File { fd: 27, path: "/home/zend/develop/kioskit/kiKit/build.log", read: false, write: true }), Io(StdoutFile(File { fd: 26, path: "/home/zend/develop/kioskit/kiKit/build.log", read: false, write: true }), Io(StdinFile(File { fd: 25, path: "/dev/pts/1", read: true, write: true }), Io(Env("CARGO_TARGET_ARMV7_LINUX_ANDROIDEABI_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Io(Env("CARGO_TARGET_AARCH64_LINUX_ANDROID_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Io(Env("WRY_ANDROID_LIBRARY", "app_lib"), Io(Env("NDK_HOME", "/home/zend/Android/Sdk/ndk/26.1.10909125"), Io(Env("CARGO_TARGET_X86_64_LINUX_ANDROID_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android24-clang"), Io(Env("CARGO_TARGET_AARCH64_LINUX_ANDROID_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android24-clang"), Io(Env("SSH_AUTH_SOCK", "/run/user/1000/keyring/ssh"), Io(Env("TAURI_ANDROID_PACKAGE_UNESCAPED", "com.myongyop.kikit"), Io(Env("HOME", "/home/zend"), Io(Env("ANDROID_HOME", "/home/zend/Android/Sdk"), Io(Env("CARGO_TARGET_X86_64_LINUX_ANDROID_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Io(Env("CARGO_TARGET_I686_LINUX_ANDROID_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android24-clang"), Io(Env("CARGO_TARGET_ARMV7_LINUX_ANDROIDEABI_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi24-clang"), Io(Env("RUST_LOG_STYLE", "always"), Io(Env("WRY_ANDROID_KOTLIN_FILES_OUT_DIR", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/java/com/myongyop/kikit/generated"), Io(Env("WRY_ANDROID_PACKAGE", "com.myongyop.kikit"), Io(Env("PATH", "/home/zend/develop/kioskit/kiKit/node_modules/.bin:/home/zend/develop/kioskit/kiKit/node_modules/.bin:/home/zend/develop/kioskit/node_modules/.bin:/home/zend/develop/node_modules/.bin:/home/zend/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/home/zend/.nvm/versions/node/v24.12.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/zend/.bun/bin:/home/zend/.bun/bin:/home/zend/.local/bin:/home/zend/.bun/bin:/home/zend/.bun/bin:/home/zend/miniconda3/bin:/home/zend/miniconda3/condabin:/home/zend/.local/bin:/home/zend/.local/share/pnpm:/home/zend/.nvm/versions/node/v24.12.0/bin:/home/zend/.cargo/bin:/home/zend/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zend/Android/Sdk/emulator:/home/zend/Android/Sdk/platform-tools:/home/zend/Android/Sdk/emulator:/home/zend/Android/Sdk/platform-tools"), Io(Env("TAURI_ANDROID_PROJECT_PATH", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android"), Io(Env("TAURI_CLI_VERBOSITY", "1"), Io(Env("TERM", "xterm-256color"), Io(Env("CARGO_TARGET_I686_LINUX_ANDROID_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Cmd(["/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/gradlew", "--project-dir", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android"])))))))))))))))))))))))))): command ["/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/gradlew", "--project-dir", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android"] exited with code 1
+       Error [tauri_cli_node] failed to build APK: Failed to assemble APK with Io(BeforeSpawn(<closure>), Io(StderrFile(File { fd: 27, path: "/home/zend/develop/kioskit/kiKit/build.log", read: false, write: true }), Io(StdoutFile(File { fd: 26, path: "/home/zend/develop/kioskit/kiKit/build.log", read: false, write: true }), Io(StdinFile(File { fd: 25, path: "/dev/pts/1", read: true, write: true }), Io(Env("CARGO_TARGET_ARMV7_LINUX_ANDROIDEABI_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Io(Env("CARGO_TARGET_AARCH64_LINUX_ANDROID_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Io(Env("WRY_ANDROID_LIBRARY", "app_lib"), Io(Env("NDK_HOME", "/home/zend/Android/Sdk/ndk/26.1.10909125"), Io(Env("CARGO_TARGET_X86_64_LINUX_ANDROID_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android24-clang"), Io(Env("CARGO_TARGET_AARCH64_LINUX_ANDROID_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android24-clang"), Io(Env("SSH_AUTH_SOCK", "/run/user/1000/keyring/ssh"), Io(Env("TAURI_ANDROID_PACKAGE_UNESCAPED", "com.myongyop.kikit"), Io(Env("HOME", "/home/zend"), Io(Env("ANDROID_HOME", "/home/zend/Android/Sdk"), Io(Env("CARGO_TARGET_X86_64_LINUX_ANDROID_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Io(Env("CARGO_TARGET_I686_LINUX_ANDROID_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android24-clang"), Io(Env("CARGO_TARGET_ARMV7_LINUX_ANDROIDEABI_LINKER", "/home/zend/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi24-clang"), Io(Env("RUST_LOG_STYLE", "always"), Io(Env("WRY_ANDROID_KOTLIN_FILES_OUT_DIR", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/java/com/myongyop/kikit/generated"), Io(Env("WRY_ANDROID_PACKAGE", "com.myongyop.kikit"), Io(Env("PATH", "/home/zend/develop/kioskit/kiKit/node_modules/.bin:/home/zend/develop/kioskit/kiKit/node_modules/.bin:/home/zend/develop/kioskit/node_modules/.bin:/home/zend/develop/node_modules/.bin:/home/zend/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/home/zend/.nvm/versions/node/v24.12.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/zend/.bun/bin:/home/zend/.bun/bin:/home/zend/.local/bin:/home/zend/.bun/bin:/home/zend/.bun/bin:/home/zend/miniconda3/bin:/home/zend/miniconda3/condabin:/home/zend/.local/bin:/home/zend/.local/share/pnpm:/home/zend/.nvm/versions/node/v24.12.0/bin:/home/zend/.cargo/bin:/home/zend/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zend/Android/Sdk/emulator:/home/zend/Android/Sdk/platform-tools:/home/zend/Android/Sdk/emulator:/home/zend/Android/Sdk/platform-tools"), Io(Env("TAURI_ANDROID_PROJECT_PATH", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android"), Io(Env("TAURI_CLI_VERBOSITY", "1"), Io(Env("TERM", "xterm-256color"), Io(Env("CARGO_TARGET_I686_LINUX_ANDROID_RUSTFLAGS", "-Clink-arg=-landroid -Clink-arg=-llog -Clink-arg=-lOpenSLES"), Cmd(["/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/gradlew", "--project-dir", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android"])))))))))))))))))))))))))): command ["/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/gradlew", "--project-dir", "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android"] exited with code 1
