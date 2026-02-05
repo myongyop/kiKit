@@ -1,0 +1,132 @@
+        Info Using installed NDK: /home/zend/Android/Sdk/ndk/26.1.10909125
+        Info Looking up installed tauri packages to check mismatched versions...
+     Running beforeBuildCommand `npm run build`
+
+> kikit@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1703.2ms
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/4) ...
+  Generating static pages using 11 workers (1/4) 
+  Generating static pages using 11 workers (2/4) 
+  Generating static pages using 11 workers (3/4) 
+✓ Generating static pages using 11 workers (4/4) in 233.4ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+
+○  (Static)  prerendered as static content
+
+[1m[92m   Compiling[0m app v0.1.0 (/home/zend/develop/kioskit/kiKit/src-tauri)
+[1m[33mwarning[0m[1m: unused variable: `app`[0m
+  [1m[94m--> [0msrc/printer.rs:11:17
+   [1m[94m|[0m
+[1m[94m11[0m [1m[94m|[0m         .setup(|app, api| {
+   [1m[94m|[0m                 [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_app`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `app` (lib) generated 1 warning (run `cargo fix --lib -p app` to apply 1 suggestion)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 13.80s
+        Info symlinking lib "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" in jniLibs dir "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/arm64-v8a"
+        Info "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "liblog.so"
+        Info "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libandroid.so"
+        Info "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libdl.so"
+        Info "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libm.so"
+        Info "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libc.so"
+        Info symlink at "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/arm64-v8a/libapp_lib.so" points to "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so"
+        Info symlink at "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/armeabi-v7a/libapp_lib.so" points to "/home/zend/develop/kioskit/kiKit/src-tauri/target/armv7-linux-androideabi/release/libapp_lib.so"
+        Info symlink at "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/x86/libapp_lib.so" points to "/home/zend/develop/kioskit/kiKit/src-tauri/target/i686-linux-android/release/libapp_lib.so"
+        Info symlink at "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/x86_64/libapp_lib.so" points to "/home/zend/develop/kioskit/kiKit/src-tauri/target/x86_64-linux-android/release/libapp_lib.so"
+
+> kikit@0.1.0 tauri
+> tauri android android-studio-script --release --target aarch64
+
+        Info connection; remote_addr=127.0.0.1:47762 conn_id=0
+[1m[32m        Info[0m Using installed NDK: /home/zend/Android/Sdk/ndk/26.1.10909125
+[1m[92m   Compiling[0m app v0.1.0 (/home/zend/develop/kioskit/kiKit/src-tauri)
+[1m[33mwarning[0m[1m: unused variable: `app`[0m
+  [1m[94m--> [0msrc/printer.rs:11:17
+   [1m[94m|[0m
+[1m[94m11[0m [1m[94m|[0m         .setup(|app, api| {
+   [1m[94m|[0m                 [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_app`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `app` (lib) generated 1 warning (run `cargo fix --lib -p app` to apply 1 suggestion)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 14.46s
+[1m[32m        Info[0m symlinking lib "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" in jniLibs dir "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/arm64-v8a"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "liblog.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libandroid.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libdl.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libm.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/aarch64-linux-android/release/libapp_lib.so" requires shared lib "libc.so"
+        Info connection; remote_addr=127.0.0.1:33680 conn_id=1
+
+> kikit@0.1.0 tauri
+> tauri android android-studio-script --release --target armv7
+
+[1m[32m        Info[0m Using installed NDK: /home/zend/Android/Sdk/ndk/26.1.10909125
+[1m[92m   Compiling[0m app v0.1.0 (/home/zend/develop/kioskit/kiKit/src-tauri)
+[1m[33mwarning[0m[1m: unused variable: `app`[0m
+  [1m[94m--> [0msrc/printer.rs:11:17
+   [1m[94m|[0m
+[1m[94m11[0m [1m[94m|[0m         .setup(|app, api| {
+   [1m[94m|[0m                 [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_app`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `app` (lib) generated 1 warning (run `cargo fix --lib -p app` to apply 1 suggestion)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 13.79s
+[1m[32m        Info[0m symlinking lib "/home/zend/develop/kioskit/kiKit/src-tauri/target/armv7-linux-androideabi/release/libapp_lib.so" in jniLibs dir "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/armeabi-v7a"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/armv7-linux-androideabi/release/libapp_lib.so" requires shared lib "liblog.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/armv7-linux-androideabi/release/libapp_lib.so" requires shared lib "libandroid.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/armv7-linux-androideabi/release/libapp_lib.so" requires shared lib "libdl.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/armv7-linux-androideabi/release/libapp_lib.so" requires shared lib "libm.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/armv7-linux-androideabi/release/libapp_lib.so" requires shared lib "libc.so"
+
+> kikit@0.1.0 tauri
+> tauri android android-studio-script --release --target i686
+
+        Info connection; remote_addr=127.0.0.1:53168 conn_id=2
+[1m[32m        Info[0m Using installed NDK: /home/zend/Android/Sdk/ndk/26.1.10909125
+[1m[92m   Compiling[0m app v0.1.0 (/home/zend/develop/kioskit/kiKit/src-tauri)
+[1m[33mwarning[0m[1m: unused variable: `app`[0m
+  [1m[94m--> [0msrc/printer.rs:11:17
+   [1m[94m|[0m
+[1m[94m11[0m [1m[94m|[0m         .setup(|app, api| {
+   [1m[94m|[0m                 [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_app`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `app` (lib) generated 1 warning (run `cargo fix --lib -p app` to apply 1 suggestion)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 14.20s
+[1m[32m        Info[0m symlinking lib "/home/zend/develop/kioskit/kiKit/src-tauri/target/i686-linux-android/release/libapp_lib.so" in jniLibs dir "/home/zend/develop/kioskit/kiKit/src-tauri/gen/android/app/src/main/jniLibs/x86"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/i686-linux-android/release/libapp_lib.so" requires shared lib "liblog.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/i686-linux-android/release/libapp_lib.so" requires shared lib "libandroid.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/i686-linux-android/release/libapp_lib.so" requires shared lib "libdl.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/i686-linux-android/release/libapp_lib.so" requires shared lib "libm.so"
+[1m[32m        Info[0m "/home/zend/develop/kioskit/kiKit/src-tauri/target/i686-linux-android/release/libapp_lib.so" requires shared lib "libc.so"
+        Info connection; remote_addr=127.0.0.1:47038 conn_id=3
+
+> kikit@0.1.0 tauri
+> tauri android android-studio-script --release --target x86_64
+
+[1m[32m        Info[0m Using installed NDK: /home/zend/Android/Sdk/ndk/26.1.10909125
+[1m[92m   Compiling[0m app v0.1.0 (/home/zend/develop/kioskit/kiKit/src-tauri)
+[1m[33mwarning[0m[1m: unused variable: `app`[0m
+  [1m[94m--> [0msrc/printer.rs:11:17
+   [1m[94m|[0m
+[1m[94m11[0m [1m[94m|[0m         .setup(|app, api| {
+   [1m[94m|[0m                 [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_app`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
