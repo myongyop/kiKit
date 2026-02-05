@@ -1,7 +1,9 @@
 package com.myongyop.kikit
 
 import android.app.Activity
+import android.app.PendingIntent
 import android.content.Context
+import android.content.Intent
 import android.hardware.usb.UsbDevice
 import android.hardware.usb.UsbManager
 import app.tauri.annotation.Command
@@ -31,6 +33,17 @@ class PrinterPlugin(private val activity: Activity) : Plugin(activity) {
             json.put("productName", device.productName ?: "Unknown")
             printerList.put(json)
         }
+        
+        // Add a Mock Printer for Emulator/Testing
+        val mockJson = JSObject()
+        mockJson.put("deviceName", "mock_printer_01")
+        mockJson.put("deviceId", 9999)
+        mockJson.put("vendorId", 0)
+        mockJson.put("productId", 0)
+        mockJson.put("manufacturerName", "Test")
+        mockJson.put("productName", "Virtual Test Printer")
+        printerList.put(mockJson)
+
         val result = JSObject()
         result.put("printers", printerList)
         invoke.resolve(result)
@@ -40,6 +53,15 @@ class PrinterPlugin(private val activity: Activity) : Plugin(activity) {
     fun connectPrinter(invoke: Invoke) {
         val args = invoke.parseArgs(ConnectPrinterArgs::class.java)
         val deviceName = args.deviceName
+        
+        if (deviceName == "mock_printer_01") {
+            val ret = JSObject()
+            ret.put("success", true)
+            ret.put("message", "Connected to Mock Printer")
+            invoke.resolve(ret)
+            return
+        }
+
         if (deviceName == null) {
             invoke.reject("Device name is required")
             return
@@ -84,6 +106,18 @@ class PrinterPlugin(private val activity: Activity) : Plugin(activity) {
         val args = invoke.parseArgs(PrintRawArgs::class.java)
         val deviceName = args.deviceName
         val data = args.data
+
+        if (deviceName == "mock_printer_01") {
+            println("MOCK PRINT: Received ${data?.size} bytes")
+            // Log the bytes to visualize
+            println("MOCK DATA: $data")
+            
+            val ret = JSObject()
+            ret.put("success", true)
+            ret.put("bytesWritten", data?.size ?: 0)
+            invoke.resolve(ret)
+            return
+        }
 
         if (deviceName == null || data == null) {
             invoke.reject("Device name and data are required")
